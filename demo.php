@@ -1,5 +1,5 @@
 <?php 
-include ('myDBManager.php');
+include ('src/myDBManager.php');
 
 try {
 
@@ -11,7 +11,7 @@ try {
 	));
 
 	$myDBManager->useExec();
-	$myDBManager->exportDatabase("myDBManager_2.sql");
+	$myDBManager->exportDatabase("myDBManager_export.sql");
 
 
 } catch(myDBManager_Exception $e) {
