@@ -41,12 +41,16 @@ With the MyDBManager object successfully created, you can call any of the follow
 ```
 //to use the exec() command rather than PHP functions
 $myDBManager->useExec();
+
 //export database as .sql file
 $myDBManager->exportDatabase("myDBManager_export.sql");
+
 //drop a database
 $myDBManager->dropDatabase("myDBManager");
+
 //create a database
 $myDBManager->createDatabase("myDBManager");
+
 //import a database
 $myDBManager->importDatabase("myDBManager_2.sql");
 ```
@@ -58,15 +62,17 @@ The import function accepts a second parameter, where to import and what action 
 ```
 //creates and inserts into the db myDBmanager_old
 $myDBManager->importDatabase("myDBManager_2.sql",array('create'=>'myDBManager_old'));
+
 //inserts into the db myDBmanager_old
 $myDBManager->importDatabase("myDBManager_2.sql",array('target'=>'myDBManager_old'));
+
 //replaces the db myDBmanager_old
 $myDBManager->importDatabase("myDBManager_2.sql",array('replace'=>'myDBManager_old'));
 ```
 
 ## Authors
 
-* **Gichimu Muhoro** - *Creative* - [for Livecore Systems](https://twitter.com/justSisto)
+* **Gichimu Muhoro**(https://twitter.com/justSisto) - *Creative* - [for Livecore Systems](https://livecore.co.ke)
 
 ## License
 
